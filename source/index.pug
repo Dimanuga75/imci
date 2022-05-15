@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/source/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>         
+   .wrapper
+      include header.pug
+      .to__high
+         .high__box
+           a(href="#main") 
+             img(src="img/arrow-high.png", alt="arrow").img__high
+      .messendger
+         .messengers__close
+                 a(href="#")
+                      img(src="img/кретсик.png", alt="close").close__messengers
+         .messengers__main
+                a(href="#")
+                      img(src="img/comment.svg", alt="menu").menu__messengers
+         .messengers__phone                  
+                   a(href="tel:74957248541",  target="_blank")
+                     img(src="img/phone.svg", alt="phone").phone__messengers  
+         .messengers__mail 
+                   a(href="mailto:main@lmco.ru",  target="_blank")
+                     img(src="img/envelope.svg", alt="mail").mail__messengers
+         .messengers__skype
+                   a(href="skype:lena.mccoder?chat",  target="_blank")
+                      img(src="img/skype-alt1.png", alt="skype").skype__messengers 
+         .messengers__viber 
+                   a(href="viber://chat?number=%2B79652828065",  target="_blank")
+                      img(src="img/phone-pause.svg", alt="viber").viber__messengers 
+         .messengers__whatsapp 
+                  a(href="https://wa.me/79652828065",  target="_blank")
+                      img(src="img/whatsapp.svg", alt="whatsapp").whatsapp__messengers
+         .messengers__telegram 
+                  a(href="https://t.me/Altair65",  target="_blank")
+                      img(src="img/telegram.svg", alt="telegram").telegram__messengers
+      .main
+         .main__container.container 
+            .main__heading
+               h1.heading__main ПРЕМИАЛЬНЫЙ И КРЕАТИВНЫЙ ДИЗАЙН ЕВРОПЕЙСКОГО УРОВНЯ ДЛЯ ЛИСТОВКИ, ЛИФЛЕТА, БУКЛЕТА ИЛИ ФЛАЕРА 
+                  b ЗА 1 ДЕНЬ 
+               h2.heading__two  Закажите разработку дизайна сейчас и 
+                  b получите скидку 10%
+            .heading__slider 
+               .slider__container                  
+                     .slider.slider_one 
+                        img(src="img/booklet1.png", alt="booklet")
+                     .slider.slider_two.slider_hidden
+                        img(src="img/flyer2.png", alt="flyer")
+                     .slider.slider_three.slider_hidden 
+                        img(src="img/listovka.1png.png", alt="listovka")
+                     .button__slider 
+                         button.btn__slider.btn_left  &#10229
+                         button.btn__slider.btn_right &#10230  
+      .main2 
+         .main2__container.container 
+            .main2__button.popup__active1 
+               button.button__main ОБСУДИТЬ ЗАДАЧУ
+                .button__figure
+            .main2__regalia 
+               .regalia__item 
+                  .regalia__figure 10
+                  .regalia__text лет в дизайне полиграфии
+               .regalia__item._regitem2 
+                  .regalia__figure 300+
+                  .regalia__text довольных клиентов
+               .regalia__item 
+                  .regalia__figure 3500+
+                  .regalia__text выполненных заказов
+      section.messenger 
+         .messendger__container.container
+            .messendger__element 
+               .messendger__item
+                  a(href="https://wa.me/79652828065",  target="_blank") 
+                     img(src="img/whatsapp.png", alt="whatsapp").item__messendger
+               .messendger__item
+                  a(href="viber://chat?number=%2B79652828065",  target="_blank") 
+                     img(src="img/viber_1.png", alt="viber").item__messendger
+               .messendger__item
+                  a(href="https://t.me/Altair65",  target="_blank") 
+                     img(src="img/telegram.png", alt="telegram").item__messendger
+            .messendger__box
+      .heading__h2.container      
+         h2.heading__three НАШИ УСЛУГИ ПО РАЗРАБОТКЕ ДИЗАЙН МАКЕТА В РАМКАХ 1-ГО ДНЯ
+      section.catalog
+         .catalog__main.container
+            .buklet__main.catalog__item
+               .buklet__img 
+                   img(src="https://static.tildacdn.com/tild6662-3162-4065-b637-666134636138/_-2.jpg", alt="buklet").img__bulket
+               .buklet__heading Дизайн буклета
+               .buklet__text 
+                  .text__format Формат - по желанию
+                  .text__time Срок - 1 день
+               .catalog__button.popup__active2
+                  button.button__catalog РАССЧИТАТЬ СТОИМОСТЬ
+                   .catalog__figure
+            .listovki__main.catalog__item
+               .buklet__img
+                   img(src="https://static.tildacdn.com/tild3037-3763-4866-a562-633638313461/_-18.jpg", alt="buklet").img__bulket
+               .buklet__heading  Дизайн листовки
+               .buklet__text 
+                  .text__format Формат - по желанию
+                  .text__time Срок - 1 день
+               .catalog__button.popup__active2
+                  button.button__catalog РАССЧИТАТЬ СТОИМОСТЬ
+                   .catalog__figure
+            .flier__main.catalog__item 
+               .buklet__img
+                  img(src="https://static.tildacdn.com/tild3332-6363-4235-a362-326232373637/_-22.jpg", alt="buklet").img__bulket 
+               .buklet__heading Дизайн флаера
+               .buklet__text 
+                  .text__format Формат - по желанию
+                  .text__time Срок - 1 день
+               .catalog__button.popup__active2 
+                  button.button__catalog РАССЧИТАТЬ СТОИМОСТЬ
+                   .catalog__figure
+            .lifleta__main.catalog__item 
+               .buklet__img
+                   img(src="https://static.tildacdn.com/tild3334-3335-4931-a335-616137353630/_-1.jpg", alt="buklet").img__bulket 
+               .buklet__heading Дизайн лифлета
+               .buklet__text 
+                  .text__format Формат - по желанию
+                  .text__time Срок - 1 день
+               .catalog__button.popup__active2 
+                  button.button__catalog РАССЧИТАТЬ СТОИМОСТЬ
+                   .catalog__figure
+      .portfolio__h2.container      
+         h2(id="portfolio").heading__four ПОСМОТРИТЕ НАШЕ ПОРТФОЛИО
+      section.portfolio 
+         .portfolio__container.container
+            .portfolio__box(id = "modal") 
+               .portfolio_horizont
+                  .portfolio_horizont1(onclick='ins(this)')
+                     img(src="https://static.tildacdn.com/tild6331-6534-4861-a461-663038633364/_-1.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)')
+                     img(src="https://static.tildacdn.com/tild3061-3365-4932-b438-396337613935/_-2.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)')
+                     img(src="https://static.tildacdn.com/tild6539-3266-4766-a632-656466383534/_-3.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)')
+                     img(src="https://static.tildacdn.com/tild6566-6537-4535-b632-343363373364/_-6.jpg", alt="portfolio").portfolio_img               
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3236-3136-4963-b638-373563353332/_-15.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3733-6361-4436-b137-333462646462/_-7.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3064-3530-4736-a436-303331613137/_-9.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3539-3738-4432-b837-323137376461/_-10.jpg", alt="portfolio").portfolio_img              
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3830-6461-4230-a366-656432633930/_-16.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3265-3138-4266-a134-373933343862/_-17.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3538-3262-4837-b665-343635356165/_-24.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)')
+                     img(src="https://static.tildacdn.com/tild6634-6631-4537-b265-396130616264/_-13.jpg", alt="portfolio").portfolio_img              
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3437-3365-4638-b062-636334356661/_-8.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild6534-3236-4432-b963-393566613064/_-12.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3537-3839-4138-a236-383336363166/_-4.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3836-3939-4839-b734-356539363563/_-5.jpg", alt="portfolio").portfolio_img              
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3434-6465-4236-b032-633637363963/_-21.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild6566-6263-4561-b430-333162613435/_-19.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild6533-3838-4933-b962-653333373864/_-18.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild6563-3635-4430-b466-326262646437/_-14.jpg", alt="portfolio").portfolio_img               
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild6430-3238-4433-b234-373831396462/_-20.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3764-3230-4039-a564-353130636466/_-22.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3438-3031-4432-b066-636666626434/_-23.jpg", alt="portfolio").portfolio_img
+                  .portfolio_horizont1(onclick='ins(this)') 
+                     img(src="https://static.tildacdn.com/tild3639-3563-4431-b736-313865653165/_-11.jpg", alt="portfolio").portfolio_img
+            .portfolio__text ПОРТФОЛИО
+         .modal__portfolio
+            .modal__content              
+               .modal__imgbox
+                  .modal__img 
+                    img(src="https://static.tildacdn.com/tild6331-6534-4861-a461-663038633364/_-1.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild3061-3365-4932-b438-396337613935/_-2.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__imgn 
+                     img(src="https://static.tildacdn.com/tild6539-3266-4766-a632-656466383534/_-3.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img    
+                     img(src="https://static.tildacdn.com/tild6566-6537-4535-b632-343363373364/_-6.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                     img(src="https://static.tildacdn.com/tild3236-3136-4963-b638-373563353332/_-15.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3733-6361-4436-b137-333462646462/_-7.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild3064-3530-4736-a436-303331613137/_-9.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3539-3738-4432-b837-323137376461/_-10.jpg", alt="portfolio").potrfolio__img.portfolio__hidden.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild3830-6461-4230-a366-656432633930/_-16.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3265-3138-4266-a134-373933343862/_-17.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3538-3262-4837-b665-343635356165/_-24.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild6634-6631-4537-b265-396130616264/_-13.jpg", alt="portfolio").potrfolio__img.portfolio__hidden               
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3437-3365-4638-b062-636334356661/_-8.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild6534-3236-4432-b963-393566613064/_-12.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild3537-3839-4138-a236-383336363166/_-4.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img  
+                     img(src="https://static.tildacdn.com/tild3836-3939-4839-b734-356539363563/_-5.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3434-6465-4236-b032-633637363963/_-21.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                     img(src="https://static.tildacdn.com/tild6566-6263-4561-b430-333162613435/_-19.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild6533-3838-4933-b962-653333373864/_-18.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild6563-3635-4430-b466-326262646437/_-14.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img 
+                     img(src="https://static.tildacdn.com/tild6430-3238-4433-b234-373831396462/_-20.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3764-3230-4039-a564-353130636466/_-22.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3438-3031-4432-b066-636666626434/_-23.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+                  .modal__img
+                     img(src="https://static.tildacdn.com/tild3639-3563-4431-b736-313865653165/_-11.jpg", alt="portfolio").potrfolio__img.portfolio__hidden
+               .modal__boxclose._box1 
+               .modal__boxclose._box2                
+               .button__potrfolio 
+                   button.btn__left 
+                     img(src="img/angle-left.svg", alt="left").btn__potrfolio.left
+                   button.btn__right
+                     img(src="img/angle-left.svg", alt="right").btn__potrfolio.right
+            button.close__portfoliobox               
+                    img(src="img/close-2.png", alt="close").close__portfolio
+         .consultion__button.container 
+                  button.button__catalog1.consultion.popup__active1 ОБСУДИТЬ ЗАДАЧУ НА БЕСПЛАТНОЙ КОНСУЛЬТАЦИИ
+                   .consultaion__figure 
+      .heading__h2.container      
+         h2.heading__five ПО ИТОГУ НАШЕГО СОТРУДНИЧЕСТВА ВЫ ПОЛУЧИТЕ МАКЕТ, КОТОРЫЙ РЕШИТ 4 КЛЮЧЕВЫЕ ЗАДАЧИ
+      .rezult 
+         .rezult__container.container 
+            .rezult__task 
+               .task_number.task__one
+                  .item__number
+                     span.number.number11 
+                  .item__text._text1 Выделит среди <br>конкурентов
+               .task_number.task__two 
+                  .item__number
+                     span.number21
+                     span.number22 
+                  .item__text._text2 Уникально раскроет <br>ваш товар/услугу
+               .task_number.task__three 
+                  .item__number
+                     span.number31
+                     span.number32 
+                     span.number33
+                  .item__text._text2 Зацепит внимание потенциальных клиентов
+               .task_number.task__four
+                  .item__number
+                     span.number41 
+                     span.number42
+                     span.number43
+                     span.number44                     
+                  .item__text Будет работать по назначению и выполнять бизнес задачу
+      .rezult__heading РЕЗУЛЬТАТ 
+      .about(id="about") 
+         .about__contianer.container 
+            .text__container
+               .about__text 
+                  .heading__about ДАВАЙТЕ ПОЗНАКОМИМСЯ 
+                  .text__about
+                     p.paragraph._paragraph1 lenaMCcoder - Брендинговое агентство полного цикла,   которое оказывает широкий спектр услуг от разработки листовки до создания и  упаковки бренда под ключ.
+                     p.paragraph._paragraph2 Не используем дешёвых шаблонов, а разрабатываем    уникальный дизайн премиум качества, который выделится и оставит ваших   конкурентов позади.
+                     p.paragraph._paragraph3 Благодаря профессиональному подходу, мы экономим ваше    время, нервы и деньги, а также гарантируем успешное завершение проекта вне    всяких обстоятельств.
+            .about__photo 
+               .photo__about._comdir1 
+                  .item__photo.about 
+                     img(src="https://thumb.tildacdn.com/tild3130-3337-4665-b735-326664643739/-/resize/558x/-/format/webp/_17.png", alt="Vasiliy").photo__item.about
+                  .item__headimg 
+                     .item__name Василий Буслаев 
+                     .item__work Креативный директор
+                  .item__more 
+                     button.button__about.button_about1 ПОДРОБНЕЕ ОБО МНЕ
+               .photo__about._comdir2 
+                  .item__photo.about 
+                     img(src="https://thumb.tildacdn.com/tild3465-6562-4337-b364-313735646361/-/resize/558x/-/format/webp/_18.png", alt="Vasiliy").photo__item.about
+                  .item__headimg.heading2 
+                     .item__name.name2 Екатерина Буслаева 
+                     .item__work.work2 Коммерческий директор
+                  .item__more
+                     button.button__about.button_about2 ПОДРОБНЕЕ ОБО МНЕ
+      .partner 
+         .partner__container.container 
+            .partner__heading С нами уже сотрудничают:
+            .partner__img 
+               .img__partner 
+                  img(src="img/Major.png", alt="Majior").__img_partner
+                  img(src="img/skinlite.webp", alt="skinlite").__img_partner
+                  img(src="img/danfoss.webp", alt="Majior").__img_partner
+                  img(src="img/1gruzovaya.webp", alt="skinlite").__img_partner
+                  img(src="img/pavel_volya1.webp", alt="Majior").__img_partner
+                  img(src="img/nezabudka.png", alt="skinlite").__img_partner.partner__none
+            .partner__img 
+               .img__partner 
+                  img(src="img/_1.png", alt="Majior").__img_partner
+                  img(src="img/_2.png", alt="skinlite").__img_partner
+                  img(src="img/_3.webp", alt="Majior").__img_partner
+                  img(src="img/_4.png", alt="skinlite").__img_partner
+                  img(src="img/_5.png", alt="Majior").__img_partner
+                  img(src="img/_7.png", alt="skinlite").__img_partner.partner__none
+            .partner__img 
+               .img__partner
+                  img(src="img/_9.png", alt="Majior").__img_partner
+                  img(src="img/_8.png", alt="skinlite").__img_partner
+                  img(src="img/_11.png", alt="Majior").__img_partner
+                  img(src="img/_12.png", alt="skinlite").__img_partner
+                  img(src="img/_13.png", alt="Majior").__img_partner
+                  img(src="img/_10.png", alt="skinlite").__img_partner.partner__none
+      .blockphoto
+         .blockphoto__container.container 
+            .blockphoto__content 
+               .blockphoto__photo
+                  .photo__item 
+                     img(src="img/1.png", alt="").__item_photo
+                  .photo__item 
+                     img(src="img/2.png", alt="").__item_photo
+                  .photo__item.photo__absolute1 
+                     img(src="img/3.png", alt="").__item_photo
+               .blockphoto__heading В наших компетенциях решать сложные задачи максимально профессионально
+            .blockphoto__photo2
+                  .photo__item 
+                     img(src="img/4.png", alt="").__item_photo.photo__absolute2
+                  .photo__item 
+                     img(src="img/5.png", alt="").__item_photo
+                  .photo__item 
+                     img(src="img/6_1.png", alt="").__item_photo 
+      .beforeforma
+         .container
+            .beforeforma__heading      
+            h2.heading__four._six РАБОТАЯ С НАМИ У ВАС НИКОГДА НЕ БУДЕТ БОЛЕТЬ ГОЛОВА ИЗ-ЗА:
+            .beforeforma__text   
+               .beforeforma__textright.left__adupt Случайного фрилансера, который даёт непредсказуемый результат – безвкусный дизайн, хаотичную вёрстку и макет, неподготовленный для печати.
+                  span.textfon
+               .beforeforma__textright.left «Дизайнерского излишества» – самое частое, с чем сталкиваются клиенты – лишние орнаменты, которые нацелены не на вашу аудиторию
+                  span.textfon21
+                  span.textfon22
+               .beforeforma__textright.left Излишних споров с заказчиком, обвинения в неправильном ТЗ, возложение вины за плохой макет на заказчика.
+                 span.textfon31
+                 span.textfon32
+                 span.textfon33
+               .beforeforma__textright.right__adupt Нежелания вносить правки, требования доплаты, отказ от завершения работы, а иногда и просто игнорирование, уход со связи.
+                 span.textfon41
+                 span.textfon42
+                 span.textfon43
+                 span.textfon44  
+            .beforeforma__head ВЫ ОСТАНЕТЕСЬ ДОВОЛЬНЫ!
+      .formaOnsite1 
+         .formaOnsite1__container.container
+           form(id="forma1" action="https://formspree.io/f/mzbokakv" method="POST" enctype="multipart/form-data").forma__positions 
+             .forma__body
+               .forma__border__top
+               .forma__head
+                  .forma__heading Хотите обсудить Вашу задачу и получить персональное предложение?
+                  .forma__text Вам всего лишь нужно оставить заявку!
+               .forma__options 
+                  .options__item 
+                     input(id="name_client" type="text", placeholder="  Ваше имя" name="name", valeu="").options__input
+                     label(for="name_client")
+                        span
+                  .options__item 
+                     input(id="phone" type="phone", placeholder="  Ваш телефон" name="phone", valeu="").options__input._req1._phone
+                     label(for="phone")
+                        span
+               .main3__button 
+                   button(type="submit").submit1.button__main.formabutton ОБСУДИТЬ ЗАДАЧУ
+                    .button__figure.formafigure                                   
+               .checkbox__item 
+                     input(id="formaagree" checked type="checkbox" name="agree" class="checkbox__input")._req1
+                     label(for="formaagree" class="checkbox__text") Я даю согласие на обработку &nbsp;<a class="checkbox__persona" href="https://lmco.ru/policy",  target="_blank"> персональных данных</a>
+               .messendger__forma1
+                 .forma__decorate 
+                 .messendger__formaelement 
+                   .messendger__item.forma
+                     a(href="https://wa.me/79652828065",  target="_blank") 
+                      img(src="img/whatsapp.png", alt="whatsapp").item__messendger
+                   .messendger__item.forma
+                     a(href="viber://chat?number=%2B79652828065",  target="_blank") 
+                      img(src="img/viber_1.png", alt="viber").item__messendger
+                   .messendger__item.forma
+                     a(href="https://t.me/Altair65",  target="_blank") 
+                      img(src="img/telegram.png", alt="telegram").item__messendger
+               .forma__decorate_bottom
+               .forma__error1
+                  .error__box Пожалуйста, заполните все обязательные поля
+                     .error__close 
+                        img(src="img/times.svg", alt="close").close__error1     
+      .heading__h2.container      
+         h2.heading__five.seven ВСЯ РАБОТА КАК НА ЛАДОНИ: ОТ ЗАЯВКИ ДО СЧАСТЛИВОГО КЛИЕНТА – ЗА 1 ДЕНЬ 
+      .afterforma 
+         .afterforma__container.container
+            .afterforma__left 
+               .afterforma__item.item1
+                   span.afterforma__circle              
+                   span.afterforma__decorate1.adupt Получаем заявку, обсуждаем Ваш проект
+               .afterforma__item.item2
+                  span.afterforma__circle
+                  span.afterforma__circle2 
+                  span.afterforma__decorate2.adupt Проводим анализ и составляем ТЗ
+               .afterforma__item.item3
+                  span.afterforma__circle
+                  span.afterforma__circle2 
+                  span.afterforma__circle3              
+                  span.afterforma__decorate3.adupt Получаем предоплату и рисуем премиум дизайн
+            .afterforma__center
+            .afterforma__right
+               .afterforma__item.item4 
+                  span.afterforma__circle
+                  span.afterforma__circle2 
+                  span.afterforma__circle3
+                  span.afterforma__circle4 
+                  span.afterforma__decorate4.adupt Предоставляем макет, вносим правки
+               .afterforma__item.item5
+                  span.afterforma__circle
+                  span.afterforma__circle2 
+                  span.afterforma__circle3
+                  span.afterforma__circle4
+                  span.afterforma__circle5
+                  span.afterforma__decorate5.adupt Сдача готового проекта подготовленного к печати
+      .afterforma__text.container 
+         .afterforma__box
+            .text__afterforma Комфортное общение, уважение мнения Заказчика, а также творческий подход к дизайну и всегда свежие решения привели к огромному успешному опыту.
+            .text__afterforma Мы выработали умение преобразовать сложную задачу и головную боль клиента в простое и эффективное решение в максимально короткий срок.
+      .reviews(id="reviews")
+         .reviews__container.container 
+            h2.heading__four._eight ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+         .reviews__photo.container 
+            .reviews__items 
+               img(src="img/reviews_1.jpg", alt="reviews").photo__reviews
+            .reviews__items 
+               img(src="img/reviews_2.jpg", alt="reviews").photo__reviews
+            .reviews__items 
+               img(src="img/reviews_3.jpg", alt="reviews").photo__reviews
+            .reviews__items 
+               img(src="img/reviews_4.jpg", alt="reviews").photo__reviews
+      .heading__h2.container      
+         h2.heading__five.nine ТАКЖЕ МЫ МОЖЕМ ВАМ ПРЕДЛОЖИТЬ
+      .offer 
+         .offer__container.container 
+            .offer__item
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_1.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 20 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_2.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 100 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_3.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 600 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_4.jpg", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 250 проектов
+            .offer__item
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_5.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 500 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_6.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 120 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_7.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 200 проектов
+               .offer__box 
+                 .offer__photo 
+                   img(src="img/ofer_8.png", alt="offer").img__offer
+                 .offer__heading Разработка брендбука 
+                 .offer__text 
+                     span Выполнили более 
+                        b 100 проектов
+      .fon
+          .beforeforma__head.offer__head_bottom СПРАВИМСЯ С ЛЮБОЙ ЗАДАЧЕЙ
+          .consultion__button.container.offer 
+               .catalog__button.popup__active1.offer__button 
+                  button.button__catalog.consultion ОБСУДИТЬ ЗАДАЧУ НА БЕСПЛАТНОЙ КОНСУЛЬТАЦИИ
+                     .consultaion__figure 
+          h2.adheing__four._eight.container У НАС ЧАСТО СПРАШИВАЮТ:
+      .faq 
+         .faq__fon 
+         .faq__container.container            
+            .faq_column.clolumn1
+               .faq__box.q1             
+                  .question__box.quest1
+                     .faq__question Вы занимаетесь печатью?
+                     .faq__icons 
+                        img(src="img/close-2.png", alt="close").img__faq 
+                        span.icon__circle                 
+                  .faq__answer.item1 Нет, мы занимаемся только разработкой дизайн макета, который полностью подготовлен к печати
+               .faq__box.q2  
+                  .question__box.quest2
+                     .faq__question Почему у фрилансеров это стоит дешевле?
+                     .faq__icons
+                        img(src="img/close-2.png", alt="close").img__faq
+                        span.icon__circle                                           
+                  .faq__answer.item2 
+                  .text__1 Если у фрилансера большой опыт за плечами в сфере дизайна, развито чувство вкуса и стиля, то стоимость работы +- одинаковая.
+                  .text__1 К сожалению, большинство фрилансеров, которые предлагают выполнить вашу задачу за маленький бюджет, в дизайне ничего не понимают.
+                  .text__1 Работая с ними, скорей всего вы можете получить непредсказуемый результат – безвкусный дизайн, хаотичную вёрстку и макет, не подготовленный для печати.
+                  .text__1 Нежелания вносить правки, требования доплаты, отказ от завершения работы, а иногда и просто игнорирование, уход со связи.
+               .faq__box.q3                            
+                  .question__box.quest3
+                     .faq__question Как осуществляется оплата заказа?
+                     .faq__icons 
+                        img(src="img/close-2.png", alt="close").img__faq
+                        span.icon__circle                    
+                  .faq__answer.item3 Мы работаем по предоплате, 50% на старте проекта, 50% после полного согласования макета подготовленного к печати
+               .faq__box.q7
+            .faq_column.clolumn2
+               .faq__box.q4             
+                  .question__box.quest1.quest4
+                     .faq__question Чем еще можете помочь?
+                     .faq__icons 
+                        img(src="img/close-2.png", alt="close").img__faq 
+                        span.icon__circle                 
+                  .faq__answer.item4 
+                    .text_1 У нас широкий спектр услуг. Помимо разработки буклетов, флаеров, лифлетов и листовок мы можем решить вопрос в следующих направлениях:
+                     ul 
+                        li Разработка брендбука
+                        li Разработка бренда
+                        li Дизайн этикетк
+                        li Дизайн упаковки
+                        li Разработка фирменного стиля
+                        li Разработка нейминга
+                        li Создание презентаций
+                        li Разработка логотипа
+                     .text__1 Более подробно с этими услугами вы можете на нашем основном сайте - lenamccoder.com/ 
+               .faq__box.q5
+                  .question__box.quest2
+                     .faq__question Почему мне выгодно обратиться к Вам?
+                     .faq__icons
+                        img(src="img/close-2.png", alt="close").img__faq
+                        span.icon__circle               
+                  .faq__answer.item5.big 
+                     .text_2 Разрабатываем непросто дизайн, а решение которое закроет 4 ключевые цели:
+                     ul 
+                        li Выделит среди конкурентов
+                        li Уникально раскроет ваш товар/услугу
+                        li Зацепит внимание потенциальных клиентов
+                        li Будет работать по назначению и выполнять бизнес-задачу
+                     .text__1 Мы экономим ваше время, нервы и деньги, а также гарантируем успешное завершение проекта вне всяких обстоятельств 
+                     .text_2 Работая с нами у вас никогда не будет болеть голова из-за:
+                     ul 
+                        li Случайного фрилансера, который даёт непредсказуемый результат – безвкусный дизайн, хаотичную вёрстку и макет, не подготовленный для печати.
+                        li «Дизайнерского излишества» - самое частое с чем сталкиваются клиенты – лишние орнаменты, которые нацелены не на вашу аудиторию
+                        li Излишних споров с Заказчиком, обвинения в неправильном ТЗ, возложение вины за плохой макет на Заказчика.
+                        li Нежелания вносить правки, требования доплаты, отказ от завершения работы, а иногда и просто игнорирование, уход со связи               
+               .faq__box.q6                            
+                  .question__box.quest3
+                     .faq__question Вы делаете любой формат?
+                     .faq__icons 
+                        img(src="img/close-2.png", alt="close").img__faq
+                        span.icon__circle                     
+                  .faq__answer.item3 Да, разработаем дизайн макет листовки, буклета, флаера или лифлета по вашим пожеланиям, любого формата
+               .faq__box.q7  
+      .popup.container 
+         .popup__window.popup1
+            .popup__content
+              form(id="forma3" action="https://formspree.io/f/mzbokakv" method="POST" enctype="multipart/form-data")
+               .popup__heading Оставьте заявку
+               .popup__text Мы перезвоним вам в ближайшее время!
+               .popup__input 
+                  .input__item 
+                     input(id="name_client" type="text", placeholder="  Ваше имя" name="name", valeu="").input__popup
+                  .input__item 
+                     label(for="name_client")
+                     input(id="phone" type="phone", placeholder="  Ваш телефон*" name="phone", valeu="").input__popup._req3._phone
+                     label(for="phone")
+               .popup__button 
+                   button(type="submit").button__popup.submit3 ОБСУДИТЬ ЗАДАЧУ
+               .popup__polinica Нажимая на кнопку, я соглашаюсь с обработкой персональных данных и &nbsp;<a class="checkbox__persona" href="https://lmco.ru/policy",  target="_blank"> политикой конфиденциальности</a>
+               .forma__error3
+                  .error__box Пожалуйста, заполните все обязательные поля
+                     .error__close 
+                        img(src="img/times.svg", alt="close").close__error3
+            button.popup__close             
+                    img(src="img/times.svg", alt="close").close__popup1            
+      .popup.container 
+         .popup__window2
+            .popup__content
+              form(id="forma4" action="https://formspree.io/f/mzbokakv" method="POST" enctype="multipart/form-data")
+               .popup__heading.window2_popup Хотите обсудить дизайн буклета?
+               .popup__text Мы перезвоним вам в ближайшее время!
+               .popup__input 
+                  .input__item 
+                     input(id="name_client" type="text", placeholder="  Ваше имя" name="name", valeu="").input__popup
+                     label(for="name_client")
+                  .input__item 
+                     input(id="phone" type="phone", placeholder="  Ваш телефон" name="phone", valeu="").input__popup._req4._phone
+                     label(for="phone")
+               .popup__button 
+                   button(type="submit").button__popup.submit4 ОБСУДИТЬ ЗАДАЧУ
+               .popup__polinica.politica2 Нажимая на кнопку, я соглашаюсь с обработкой персональных данных и &nbsp;<a class="checkbox__persona" href="https://lmco.ru/policy",  target="_blank"> политикой конфиденциальности</a>
+               .forma__error4
+                  .error__box Пожалуйста, заполните все обязательные поля
+                     .error__close 
+                        img(src="img/times.svg", alt="close").close__error4
+            button.popup__close             
+                    img(src="img/times.svg", alt="close").close__popup2           
+      .popup.container 
+         .popup__window3
+            .popup__content.popup__boxtext               
+               .popup__text 
+                  ul 
+                     li Более 25 лет посвятил работе в маркетинге, дизайне, брендинге
+                     li Успешно работал креативным директором в международном сетевом агентстве TBWA/EMCG
+                     li Выиграл и успешно закончил Президентскую программу МИРБИС
+                     li Собственные бизнесы в сфере FMCG производства напитков, курсов повышения квалификации, музыкального продюсирования, глубокое понимание строительного бизнеса
+                     li Инвестор в сфере инновационных технологий, акционер компании DisplAir
+               .popup__button 
+                   button.button__popup.popup__active1.button__popup_about ОБСУДИТЬ ЗАДАЧУ             
+            button.popup__close             
+                    img(src="img/times.svg", alt="close").close__popup1.close__popup3 
+      .popup.container 
+         .popup__window4
+            .popup__content.popup__boxtext.window4_boxtext               
+               .popup__text.popup__text1 
+                  ul 
+                     li 8 лет прожила в Европе (Венгрия), отлично владею венгерским языком
+                     li Закончила художественную школу в Венгрии
+                     li Участвую и организую выставки современного искусства
+                     li Закончила экономический факультет МАДИ и магистратуру РАНХиГС при Президенте РФ по специальности «Управление маркетингом», ВШЭ по специальности «Дизайн бизнес»
+                     li Защитила первую и единственную в России диссертацию на тему «Трендвотчинг: наблюдение, анализ и создание трендов на рынке»
+                     li Собственные бизнесы в сфере онлайн-продаж одежды, музыкального продюсирования, обучения живописи
+               .popup__button 
+                   button.button__popup.popup__active1.button__popup_about ОБСУДИТЬ ЗАДАЧУ             
+            button.popup__close             
+                    img(src="img/times.svg", alt="close").close__popup.close__popup4   
+      include footer.pug  
+   
+  </body> 
+  <script src="js/main.js"></script>
+</html>

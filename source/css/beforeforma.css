@@ -1,0 +1,218 @@
+._six {
+  width: 635px;
+}
+@media (max-width: 1199.98px) {
+  ._six {
+    width: 635px;
+  }
+}
+@media (max-width: 991.98px) {
+  ._six {
+    width: 541px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 639.98px) {
+  ._six {
+    font-size: 30px;
+    width: 456px;
+  }
+}
+@media (max-width: 479.98px) {
+  ._six {
+    font-size: 22px;
+    width: 306px;
+  }
+}
+
+.beforeforma__textright {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 300;
+  margin-top: 60px;
+  position: relative;
+  width: 330px;
+}
+.beforeforma__textright span {
+  position: absolute;
+  top: 40px;
+  left: -3px;
+  height: 8px;
+  width: 90px;
+  background-color: #4d4d4d;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0.1;
+}
+@media (max-width: 1199.98px) {
+  .beforeforma__textright span {
+    top: 50px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .beforeforma__textright {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .beforeforma__textright {
+    margin-left: 0;
+    width: 446px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .beforeforma__textright {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 479.98px) {
+  .beforeforma__textright {
+    width: 298px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .beforeforma__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 635px;
+  }
+}
+
+.beforeforma__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: -96px;
+}
+@media (max-width: 1199.98px) {
+  .beforeforma__text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 991.98px) {
+  .beforeforma__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.left__adupt {
+  margin-left: 650px;
+  width: 500px;
+}
+@media (max-width: 1199.98px) {
+  .left__adupt {
+    margin-left: 0px;
+    margin-right: 0;
+    margin-right: 0;
+    width: 446px;
+  }
+}
+@media (max-width: 479.98px) {
+  .left__adupt {
+    width: 298px;
+  }
+}
+
+.right__adupt {
+  width: 316px;
+}
+@media (max-width: 1199.98px) {
+  .right__adupt {
+    width: 446px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .right__adupt {
+    width: 298px;
+  }
+}
+
+.beforeforma__textright .textfon21 {
+  top: 50px;
+}
+
+.beforeforma__textright .textfon22 {
+  top: 50px;
+  left: 17px;
+}
+
+.beforeforma__textright .textfon31 {
+  top: 50px;
+  left: 0;
+}
+
+.beforeforma__textright .textfon32 {
+  top: 50px;
+  left: 20px;
+}
+
+.beforeforma__textright .textfon33 {
+  top: 50px;
+  left: 40px;
+}
+
+.beforeforma__textright .textfon41 {
+  top: 50px;
+  left: 0;
+}
+
+.beforeforma__textright .textfon42 {
+  top: 50px;
+  left: 20px;
+}
+
+.beforeforma__textright .textfon43 {
+  top: 50px;
+  left: 40px;
+}
+
+.beforeforma__textright .textfon44 {
+  top: 50px;
+  left: 60px;
+}
+
+.beforeforma__head {
+  color: #ececec;
+  font-size: 64px;
+  line-height: 1.55;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 1199.98px) {
+  .beforeforma__head {
+    font-size: 52px;
+  }
+}
+@media (max-width: 639.98px) {
+  .beforeforma__head {
+    font-size: 42px;
+  }
+}
+@media (max-width: 479.98px) {
+  .beforeforma__head {
+    font-size: 36px;
+  }
+}

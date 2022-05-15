@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  online: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: #4d4d4d;
+  font-size: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+//ul li {
+//  list-style: none;
+//}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: inherit;
+}
+$minwidth: 320px;
+$maxwidth: 1200px;
+$maxwidthcontainer: 1170px;
+$md1: $maxwidthcontainer + 12px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  //  height: 100%;
+}
+.container {
+  max-width: $maxwidthcontainer + 12px;
+  margin: 0 auto;
+  padding: 0 12px 0 12px;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+@import "header.scss";
+@import "main.scss";
+@import "catalog.scss";
+@import "portfolio.scss";
+@import "task.scss";
+@import "about";
+@import "partner";
+@import "photo";
+@import "beforeforma";
+@import "forma";
+@import "afterforma";
+@import "reviews";
+@import "faq";
+@import "footer";
+@import "popup";
+@import "messengers";
+
+//----------------------------------------------------------------------------//

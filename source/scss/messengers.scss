@@ -1,0 +1,231 @@
+.messendger {
+  position: fixed;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  right: 40px;
+  bottom: 40px;
+  @media (max-width: 991.98px) {
+    right: 20px;
+    bottom: 30px;
+  }
+}
+.to__high {
+  margin-right: 30px;
+  position: fixed;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 40px;
+  bottom: 40px;
+  background-color: transparent;
+  transform: scale(0);
+  transition: 0.3s ease 0s;
+  opacity: 0.3;
+}
+.img__high {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100000;
+  opacity: 0.4;
+}
+.to__high_active {
+  transform: scale(1);
+  transition: 0.3s ease 0s;
+}
+.messengers {
+  &__main {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffa200;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    transform: scale(1);
+    transition: transform 0.2s;
+    animation: main_menu 2s ease infinite alternate;
+  }
+
+  &__phone {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(0, 77, 115);
+    padding-left: 8px;
+    padding-top: 8px;
+    visibility: hidden;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__mail {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(19, 148, 228);
+    padding-left: 5px;
+    padding-top: 5px;
+    visibility: hidden;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__skype {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #0092e4;
+    padding-left: 5px;
+    padding-top: 5px;
+    visibility: hidden;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__viber {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #8f5db7;
+    padding-left: 8px;
+    padding-top: 8px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    visibility: hidden;
+  }
+
+  &__whatsapp {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #25d366;
+    padding-left: 5px;
+    padding-top: 5px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    visibility: hidden;
+    transform: translateY(0);
+    transition: 0.3s;
+  }
+
+  &__telegram {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #0092e4;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    visibility: hidden;
+    transform: translateY(0);
+    transition: 0.3s;
+  }
+
+  &__close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes main_menu {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+.phone__messengers {
+  width: 34px;
+  height: 34px;
+}
+.mail__messengers {
+  width: 40px;
+  height: 40px;
+}
+
+.skype__messengers {
+  width: 40px;
+  height: 40px;
+}
+.viber__messengers {
+  width: 34px;
+  height: 34px;
+}
+.whatsapp__messengers {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.telegram__messengers {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+.close__messengers {
+  width: 20px;
+  height: 20px;
+  margin: 20px 0 0 20px;
+}
+.menu__messengers {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 10px;
+}
+.messengers__main_noactive {
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+.telegram_active {
+  transform: translateY(-70px);
+  transition: 0.3s;
+  visibility: visible;
+}
+.whatsapp_active {
+  transform: translateY(-130px);
+  transition: 0.3s;
+  visibility: visible;
+}
+.viber_active {
+  transform: translateY(-190px);
+  transition: 0.3s;
+  visibility: visible;
+}
+.skype_active {
+  transform: translateY(-250px);
+  transition: 0.3s;
+  visibility: visible;
+}
+.mail_active {
+  transform: translateY(-310px);
+  transition: 0.3s;
+  visibility: visible;
+}
+.phone_active {
+  transform: translateY(-370px);
+  transition: 0.3s;
+  visibility: visible;
+}
+//---------------------------------------------------
