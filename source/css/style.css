@@ -5027,10 +5027,13 @@ span.number44 {
 }
 
 .popup__close {
+   width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgb(77, 77, 77, 0.1);
   position: absolute;
   top: 1%;
   left: 95%;
-  background-color: transparent;
   opacity: 1;
   z-index: 1200;
 }
