@@ -2231,6 +2231,11 @@ span.number44 {
             align-items: center;
   }
 }
+@media (max-width: 479.98px) {
+  .blockphoto__container {
+    padding-left: 25px;
+  }
+}
 .blockphoto__content {
   display: -webkit-box;
   display: -ms-flexbox;
