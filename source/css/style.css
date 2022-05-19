@@ -2359,8 +2359,11 @@ span.number44 {
 }
 .photo__item:not(:last-child) {
   margin-right: 10px;
-}
-
+  }
+.photo__item {
+  width: 220px;
+  height: 220px;
+  }
 .__item_photo {
   max-width: 100%;
   min-height: 100%;
