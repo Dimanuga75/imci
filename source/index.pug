@@ -332,7 +332,7 @@
                .blockphoto__photo
                   .photo__item 
                      img(src="img/1.png", alt="").__item_photo
-                  .photo__item 
+                  .photo__item.photo__margin 
                      img(src="img/2.png", alt="").__item_photo
                   .photo__item.photo__absolute1 
                      img(src="img/3.png", alt="").__item_photo
@@ -340,9 +340,9 @@
             .blockphoto__photo2
                   .photo__item 
                      img(src="img/4.png", alt="").__item_photo.photo__absolute2
-                  .photo__item 
+                  .photo__item.left__margin
                      img(src="img/5.png", alt="").__item_photo
-                  .photo__item 
+                  .photo__item.photo__margin 
                      img(src="img/6_1.png", alt="").__item_photo 
       .beforeforma
          .container
@@ -601,25 +601,25 @@
       .popup.container 
          .popup__window.popup1
             .popup__content
-              form(id="forma3" action="https://formspree.io/f/mzbokakv" method="POST" enctype="multipart/form-data")
-               .popup__heading Оставьте заявку
-               .popup__text Мы перезвоним вам в ближайшее время!
-               .popup__input 
+               form(id="forma3" action="https://formspree.io/f/mzbokakv" method="POST" enctype="multipart/form-data")
+                .popup__heading Оставьте заявку
+                .popup__text Мы перезвоним вам в ближайшее время!
+                .popup__input 
                   .input__item 
                      input(id="name_client" type="text", placeholder="  Ваше имя" name="name", valeu="").input__popup
                   .input__item 
                      label(for="name_client")
                      input(id="phone" type="phone", placeholder="  Ваш телефон*" name="phone", valeu="").input__popup._req3._phone
                      label(for="phone")
-               .popup__button 
+                .popup__button 
                    button(type="submit").button__popup.submit3 ОБСУДИТЬ ЗАДАЧУ
-               .popup__polinica Нажимая на кнопку, я соглашаюсь с обработкой персональных данных и &nbsp;<a class="checkbox__persona" href="https://lmco.ru/policy",  target="_blank"> политикой конфиденциальности</a>
-               .forma__error3
+                .popup__polinica Нажимая на кнопку, я соглашаюсь с обработкой персональных данных и &nbsp;<a class="checkbox__persona" href="https://lmco.ru/policy",  target="_blank"> политикой конфиденциальности</a>
+                .forma__error3
                   .error__box Пожалуйста, заполните все обязательные поля
                      .error__close 
                         img(src="img/times.svg", alt="close").close__error3
-            button.popup__close             
-                    img(src="img/times.svg", alt="close").close__popup1            
+               button.popup__close             
+                    img(src="img/close-2.png", alt="close").close__popup1            
       .popup.container 
          .popup__window2
             .popup__content
@@ -640,8 +640,8 @@
                   .error__box Пожалуйста, заполните все обязательные поля
                      .error__close 
                         img(src="img/times.svg", alt="close").close__error4
-            button.popup__close             
-                    img(src="img/times.svg", alt="close").close__popup2           
+              button.popup__close             
+                    img(src="img/close-2.png", alt="close").close__popup2           
       .popup.container 
          .popup__window3
             .popup__content.popup__boxtext               
@@ -654,8 +654,8 @@
                      li Инвестор в сфере инновационных технологий, акционер компании DisplAir
                .popup__button 
                    button.button__popup.popup__active1.button__popup_about ОБСУДИТЬ ЗАДАЧУ             
-            button.popup__close             
-                    img(src="img/times.svg", alt="close").close__popup1.close__popup3 
+               button.popup__close             
+                    img(src="img/close-2.png", alt="close").close__popup1.close__popup3 
       .popup.container 
          .popup__window4
             .popup__content.popup__boxtext.window4_boxtext               
@@ -669,8 +669,8 @@
                      li Собственные бизнесы в сфере онлайн-продаж одежды, музыкального продюсирования, обучения живописи
                .popup__button 
                    button.button__popup.popup__active1.button__popup_about ОБСУДИТЬ ЗАДАЧУ             
-            button.popup__close             
-                    img(src="img/times.svg", alt="close").close__popup.close__popup4   
+               button.popup__close             
+                    img(src="img/close-2.png", alt="close").close__popup.close__popup4   
       include footer.pug  
    
   </body> 

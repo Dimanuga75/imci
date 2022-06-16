@@ -9,6 +9,9 @@
       flex-direction: column;
       align-items: center;
     }
+    @media (max-width: 479.98px) {
+      padding-left: 25px;
+    }
   }
   &__content {
     display: flex;
@@ -77,13 +80,15 @@
   @media (max-width: 479.98px) {
     position: absolute;
     top: -157px;
-    left: 316px;
+    left: 322px;
     width: 149px;
     height: 149px;
   }
 }
 .photo {
   &__item {
+    width: 220px;
+    height: 220px;
     @media (max-width: 1199.98px) {
       width: 193px;
       height: 193px;
@@ -96,8 +101,15 @@
       width: 149px;
       height: 149px;
     }
-    &:not(:last-child) {
-      margin-right: 10px;
+
+    margin-right: 10px;
+    @media (max-width: 479.98px) {
+      &.photo__margin {
+        margin-right: 0;
+      }
+      &.left__margin {
+        margin-left: 5px;
+      }
     }
   }
 }

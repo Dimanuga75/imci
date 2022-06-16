@@ -191,23 +191,28 @@
 .popup__close {
   position: absolute;
   top: 1%;
-  left: 95%;
-  background-color: transparent;
-  opacity: 1;
+  left: 93%;
+  opacity: 0.5;
   z-index: 1200;
 }
 @media (max-width: 639.98px) {
   .popup__close {
-    top: 17%;
-    left: 85%;
+    left: 92%;
+  }
+}
+@media (max-width: 479.98px) {
+  .popup__close {
+    left: 89%;
   }
 }
 
 .close__popup1,
 .close__popup2,
+.close__popup3,
+.close__popup4,
 .close__popup {
-  width: 48px;
-  height: 48px;
+  width: 26px;
+  height: 26px;
 }
 
 .popup__window3 {
