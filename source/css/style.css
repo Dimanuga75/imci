@@ -2322,7 +2322,7 @@ span.number44 {
 @media (max-width: 479.98px) {
   .photo__absolute1 {
     position: absolute;
-    top: 154px;
+    top: 224px;
     left: 0;
     width: 149px;
     height: 149px;
@@ -2333,9 +2333,9 @@ span.number44 {
   .photo__absolute2 {
     position: absolute;
     top: -157px;
-    left: 316px;
-    width: 149px;
-    height: 149px;
+    left: 423px;
+/*     width: 149px;
+    height: 149px; */
   }
 }
 
@@ -2398,8 +2398,8 @@ span.number44 {
 } */
 @media (max-width: 639.98px) {
   .blockphoto__photo2 {
-    margin-left: 22px;
-    width: 477px;
+    margin-left: 32px;
+/*     width: 477px; */
     margin-top: 10px;
   }
 }
