@@ -2386,7 +2386,7 @@ span.number44 {
    margin-left: 0;
   }
 }
-@media (max-width: 769.98px) {
+/* @media (max-width: 769.98px) {
   .blockphoto__photo2 {
     width: 546px;
   }
@@ -2395,7 +2395,7 @@ span.number44 {
   .blockphoto__photo2 {
     margin-left: 70px;
   }
-}
+} */
 @media (max-width: 639.98px) {
   .blockphoto__photo2 {
     margin-left: 22px;
