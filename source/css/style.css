@@ -2381,9 +2381,9 @@ span.number44 {
   margin-left: 110px;
   width: 690px;
 }
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .blockphoto__photo2 {
-    width: 609px;
+   margin-left: 0;
   }
 }
 @media (max-width: 769.98px) {
