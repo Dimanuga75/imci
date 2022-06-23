@@ -2338,7 +2338,10 @@ span.number44 {
     height: 149px; */
   }
 }
-
+.photo__item {
+  width: 220px;
+  height: 220px;
+  }
 @media (max-width: 1199.98px) {
   .photo__item {
     width: 193px;
@@ -2360,10 +2363,7 @@ span.number44 {
 .photo__item:not(:last-child) {
   margin-right: 10px;
   }
-.photo__item {
-  width: 220px;
-  height: 220px;
-  }
+
 .__item_photo {
   max-width: 100%;
   min-height: 100%;
