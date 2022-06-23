@@ -2322,7 +2322,7 @@ span.number44 {
 @media (max-width: 479.98px) {
   .photo__absolute1 {
     position: absolute;
-    top: 224px;
+    top: 154px;
     left: 0;
     width: 149px;
     height: 149px;
@@ -2406,8 +2406,8 @@ span.number44 {
 @media (max-width: 479.98px) {
   .blockphoto__photo2 {
     position: relative;
-    margin-top: 72px;
-    margin-left: -207px;
+    margin-top: 2px;
+    margin-left: 73px;
   }
 }
 
