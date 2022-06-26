@@ -4269,7 +4269,8 @@ span.number44 {
 }
 @media (max-width: 479.98px) {
   .ya__map {
-    min-width: 300px;
+      top: 130px;
+   max-width: 300px;
   }
 }
 
