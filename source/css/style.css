@@ -804,11 +804,11 @@ li:hover {
   }
 }
 
-.messenger {
+.messenger1 {
   margin: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
-  .messenger {
+  .messenger1 {
     display: none;
   }
 }
@@ -5220,7 +5220,7 @@ span.number44 {
 }
 @media (max-width: 991.98px) {
   .messendger {
-    right: 20px;
+    right: 100px;
     bottom: 30px;
   }
 }
