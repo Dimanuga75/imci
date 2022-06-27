@@ -804,11 +804,11 @@ li:hover {
   }
 }
 
-.messenger1 {
+.messenger {
   margin: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
-  .messenger1 {
+  .messenger {
     display: none;
   }
 }
