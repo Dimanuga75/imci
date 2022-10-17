@@ -134,7 +134,6 @@ function ins(e) {
       portfSlider[ind].classList.add("portfolio__right");
       portfSlider[ind].classList.remove("portfolio__left");
     }
-    console.log(ind);
   });
 }
 const openFaq = document.querySelectorAll(".faq__box");
