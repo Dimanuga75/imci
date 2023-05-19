@@ -66,7 +66,7 @@ let ind1 = portfSlider.length;
 
 function ins(e) {
   let l = portfImgCkick.length;
-  for (i = 0; i < l; i++) {
+  for (let i = 0; i < l; i++) {
     if (portfImgCkick[i] == e) {
       var ind = i;
       break;
@@ -136,19 +136,16 @@ function ins(e) {
     }
   });
 }
-const openFaq = document.querySelectorAll(".faq__box");
-for (item of openFaq) {
-  item.addEventListener("click", function () {
-    if (this.classList.contains("faq_active")) {
-      this.classList.remove("faq_active");
-    } else {
-      for (el of openFaq) {
-        el.classList.remove("faq_active");
-      }
-      this.classList.add("faq_active");
-    }
-  });
-}
+const openFaq = document.querySelector(".faq");
+openFaq.addEventListener("click", function (e) {
+  if (e.target.classList.contains("faq__click")) {
+    let index = e.target.dataset.point;
+    console.log(index);
+    let faqActive = document.querySelectorAll(".faq__box");
+    faqActive[index].classList.toggle("faq_active");
+  }
+});
+
 let popup1_button = document.querySelectorAll(".popup__active1");
 let popup1 = document.querySelector(".popup1");
 let popup2_button = document.querySelectorAll(".popup__active2");
@@ -158,7 +155,7 @@ let popup4 = document.querySelector(".popup__window4");
 let popup3_button = document.querySelector(".button_about1");
 let popup4_button = document.querySelector(".button_about2");
 
-for (item1 of popup1_button) {
+for (let item1 of popup1_button) {
   item1.addEventListener("click", function () {
     popup1.classList.add("popup_active");
     popup3.classList.remove("popup_active");
@@ -169,7 +166,7 @@ for (item1 of popup1_button) {
     };
   });
 }
-for (item2 of popup2_button) {
+for (let item2 of popup2_button) {
   item2.addEventListener("click", function () {
     popup2.classList.add("popup_active");
     let popup__close2 = document.querySelector(".close__popup2");
