@@ -4,6 +4,7 @@ let openmenu = document.querySelector(".menu__icon");
 let modal = document.querySelector(".burger__mobail");
 let closemenu = document.querySelector(".burger__close");
 let closemenu2 = document.querySelector(".burger__list");
+const screen1200 = window.matchMedia("(min-width: 1200px)");
 
 openmenu.onclick = function (e) {
   e.preventDefault;
@@ -24,13 +25,12 @@ let btnprevue = document.querySelector(".btn_left");
 var slides = document.getElementsByClassName("slider");
 let sum = slides.length - 1;
 
-btnnext.onclick = function plusSlide(e1) {
-  e1.preventDefault;
-  console.log(slideIndex);
+btnnext.onclick = function plusSlide(e) {
+  e.preventDefault;
+
   slides[slideIndex].classList.remove("slider_active");
   slides[slideIndex].classList.add("slider_hidden");
   slideIndex++;
-  console.log(slideIndex);
   if (slideIndex > sum) {
     slideIndex = 0;
     slides[slideIndex].classList.add("slider_active");
@@ -39,12 +39,10 @@ btnnext.onclick = function plusSlide(e1) {
   }
 };
 
-btnprevue.onclick = function minusSlide(e2) {
-  e2.preventDefault;
+btnprevue.onclick = function minusSlide() {
   slides[slideIndex].classList.remove("slider_active");
   slides[slideIndex].classList.add("slider_hidden");
   slideIndex--;
-  console.log(slideIndex);
   if (slideIndex < 0) {
     slideIndex = sum;
     slides[slideIndex].classList.remove("slider_hidden");
@@ -55,92 +53,60 @@ btnprevue.onclick = function minusSlide(e2) {
   }
 };
 
-let portfImgCkick = document.querySelectorAll(".portfolio_horizont1");
+let portfBox = document.querySelector(".portfolio_horizont");
 let portfSlider = document.querySelectorAll(".potrfolio__img");
+let modalImg = document.querySelectorAll(".modal__img");
 let modalWindow = document.querySelector(".modal__portfolio");
 let closePotrfSlider = document.querySelector(".close__portfolio");
-let sum2 = portfSlider.length - 1;
 let btnright = document.querySelector(".right");
 let btnleft = document.querySelector(".left");
-let ind1 = portfSlider.length;
 
-function ins(e) {
-  let l = portfImgCkick.length;
-  for (let i = 0; i < l; i++) {
-    if (portfImgCkick[i] == e) {
-      var ind = i;
-      break;
+portfBox.addEventListener("click", function (e) {
+  if (
+    e.target.classList.contains("portfolio_horizont1") ||
+    e.target.classList.contains("portfolio_img")
+  ) {
+    if (screen1200.matches) {
+      let index = e.target.dataset.num;
+      modalWindow.classList.add("portSlider__active");
+      modalImg.forEach(
+        (item) => (item.style.transform = `translateX(${-index * 100}%)`)
+      );
+      closePotrfSlider.onclick = function close() {
+        modalWindow.classList.remove("portSlider__active");
+      };
+      btnleft.addEventListener("click", function plusSlidePortf(e) {
+        e.preventDefault;
+        index++;
+        if (index === portfSlider.length) {
+          index = 0;
+        }
+        modalImg.forEach(
+          (item) => (item.style.transform = `translateX(${-index * 100}%)`)
+        );
+      });
+      btnright.addEventListener("click", function plusSlidePortf(e) {
+        e.preventDefault;
+        index--;
+        if (index < 0) {
+          index = portfSlider.length - 1;
+        }
+        modalImg.forEach(
+          (item) => (item.style.transform = `translateX(${-index * 100}%)`)
+        );
+      });
+    } else {
+      modalWindow.classList.add("portSlider__active");
+      closePotrfSlider.onclick = function close() {
+        modalWindow.classList.remove("portSlider__active");
+      };
     }
   }
-  //  console.log(ind);
-  modalWindow.classList.add("portSlider__active");
-  portfSlider[ind].classList.remove("portfolio__hidden");
-  closePotrfSlider.onclick = function close() {
-    modalWindow.classList.remove("portSlider__active");
-    portfSlider[ind].classList.add("portfolio__hidden");
-    portfSlider[ind].classList.remove("portfolio__active");
-  };
-
-  btnleft.addEventListener("click", function plusSlidePortf(e3) {
-    e3.preventDefault;
-    portfSlider[ind].classList.add("portfolio__left");
-    portfSlider[ind].classList.add("portfolio__hidden");
-    portfSlider[ind].classList.remove("portfolio__active");
-    portfSlider[ind].classList.remove("portfolio__right");
-    ind++;
-    ind1 = ind;
-
-    if (ind > sum2) {
-      ind = 0;
-      ind1 = 22;
-      console.log(ind1);
-      portfSlider[ind].classList.add("portfolio__active");
-      portfSlider[ind1].classList.remove("portfolio__left");
-      portfSlider[ind].classList.remove("portfolio__hidden");
-    } else if (ind == 1) {
-      ind1 = 23;
-      console.log(ind1);
-      portfSlider[ind].classList.add("portfolio__active");
-      portfSlider[ind1].classList.remove("portfolio__left");
-      portfSlider[ind].classList.remove("portfolio__hidden");
-    } else if (ind == 2) {
-      ind1 = 0;
-      console.log(ind1);
-      portfSlider[ind].classList.add("portfolio__active");
-      portfSlider[ind1].classList.remove("portfolio__left");
-      portfSlider[ind].classList.remove("portfolio__hidden");
-    } else {
-      ind1 = ind - 2;
-      portfSlider[ind].classList.add("portfolio__active");
-      portfSlider[ind1].classList.remove("portfolio__left");
-      portfSlider[ind].classList.remove("portfolio__hidden");
-
-      console.log(ind1);
-    }
-  });
-  btnright.addEventListener("click", function plusSlidePortf(e4) {
-    e4.preventDefault;
-    portfSlider[ind].classList.add("portfolio__hidden");
-    portfSlider[ind].classList.remove("portfolio__active");
-    portfSlider[ind].classList.remove("portfolio__right");
-    ind--;
-    if (ind >= 0) {
-      portfSlider[ind].classList.remove("portfolio__hidden");
-      portfSlider[ind].classList.add("portfolio__right");
-      portfSlider[ind].classList.remove("portfolio__left");
-    } else {
-      ind = sum2;
-      portfSlider[ind].classList.remove("portfolio__hidden");
-      portfSlider[ind].classList.add("portfolio__right");
-      portfSlider[ind].classList.remove("portfolio__left");
-    }
-  });
-}
+});
 const openFaq = document.querySelector(".faq");
 openFaq.addEventListener("click", function (e) {
   if (e.target.classList.contains("faq__click")) {
     let index = e.target.dataset.point;
-    console.log(index);
     let faqActive = document.querySelectorAll(".faq__box");
     faqActive[index].classList.toggle("faq_active");
   }
@@ -234,13 +200,33 @@ for (let smoothLink of smoothLinks) {
   });
 }
 let tohigh = document.querySelector(".to__high");
-window.addEventListener("scroll", (rtr) => {
-  if (scrollY > 1000) {
+let header = document.querySelector(".header");
+let messengerBox = document.querySelector(".messendger");
+messengerBox.style.display = "none";
+
+const apperanceMessege = function (entrise) {
+  const entry = entrise[0];
+
+  if (!entry.isIntersecting) {
     tohigh.classList.add("to__high_active");
+    messengerBox.style.display = "block";
   } else {
     tohigh.classList.remove("to__high_active");
+    messengerBox.style.display = "none";
   }
-});
+};
+
+const observeOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: "400px",
+};
+const messageObserver = new IntersectionObserver(
+  apperanceMessege,
+  observeOptions
+);
+messageObserver.observe(header);
+
 let closeError1 = document.querySelector(".close__error1");
 let errorBox1 = document.querySelector(".forma__error1");
 let closeError2 = document.querySelector(".close__error2");
@@ -459,7 +445,6 @@ function formaddError4(input) {
   closeError4.onclick = function () {
     errorBox4.classList.remove("boxactive");
   };
-  //  setTimeout(removeError4, 5000);
 }
 function formremoveError4(input) {
   input.parentElement.classList.remove("_error");
